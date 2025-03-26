@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width,intical-scale=1.0"/>
+        <title>Addmin</title>
+        <link href="remix/remixicon.css" type="text/css" rel="stylesheet"/>
+        <link href="css/apexcharts.css" type="text/css" rel="stylesheet"/>
+        <link href="css/addmin.css" type="text/css" rel="stylesheet"/>
+        <link href="css/max.css" type="text/css" rel="stylesheet"/>
+        <link href="css/switch.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+      <div id="preloader">
+        <div id="status">&nbsp;</div>
+      </div>
+        <!-- aside -->
+        <aside>
+            <div class="logo">
+                <a href="#" class="d-flex align-center">
+                    <img src="images/logo.png" alt="" width="20px"/>
+                    <h2>sneat</h2>
+                </a>
+            </div>
+            <ul class="menu">
+              <li><a href="#"><i class="ri-home-8-line"></i>Dashboard</a></li>
+              <li><a href="#"><i class="ri-user-settings-fill"></i>Account Setting</a></li>
+              <br/>
+              <div class="icon-container">
+                <i class="ri-settings-3-line" id="settings-icon"></i> <!-- Settings Icon -->
+                <ul id="color" class="color-list">
+                    <li style="background-color: rgba(18, 86, 38, 0.7);"></li>
+                    <li style="background-color: rgba(73, 120, 62, 0.7);"></li>
+                    <li style="background-color: rgba(16, 61, 104, 0.7);"></li>
+                    <li style="background-color: rgba(113, 38, 82, 0.658);"></li>
+                    <li style="background-color: rgba(63, 67, 108, 0.7);"></li>
+                    <li style="background-color: rgba(91, 73, 45, 0.7);"></li>
+                </ul>
+            </div>
+            
+              <p>PAGES</p>
+              <li><a href="#"><i class="ri-login-box-line"></i>Login</a></li>
+              <li><a href="#"><i class="ri-user-add-line"></i>Ragister</a></li>
+              <li><a href="#"><i class="ri-error-warning-line"></i>Ragister</a></li>
+              <p>USER INTERFACE</p>
+              <li><a href="#"><i class="ri-text"></i>Typography</a></li>
+              <li><a href="#"><i class="ri-eye-line"></i>Icons</a></li>
+              <li><a href="#"><i class="ri-bank-card-2-line"></i>Cards</a></li>
+              <li><a href="#"><i class="ri-grid-line"></i>Tables</a></li>
+              <li><a href="#"><i class="ri-layout-top-2-line"></i>Form Layouts</a></li>
+          </ul>
+            <div class="poster">
+                <img src="images/project.png" alt="" width="250px"/>
+            </div>
+        </aside>
+
+
+        <!-- section -->
+        <main>
+            <div class="main-section">
+                <nav class="d-flex align-center justify-between">
+                    <form>
+                      <div class="toggle">
+                        <i class="ri-align-justify"></i>
+                      </div>
+                        <i class="ri-search-line"></i>
+                        <input type="text" placeholder="Search"/>
+                        <select>
+                            <option>K</option>
+                        </select>
+                    </form>
+                    <div class="navbar-icon d-flex align-center">
+                        <i class="ri-github-fill"></i>
+                        <i class="ri-notification-2-line"></i>
+                        <i class="ri-sun-line"></i>
+                        <div class="profile-img">
+                            <img src="images/profile.png" alt="" width="50px"/>
+                        </div>
+                    </div>
+                </nav>
+                <div>
+                    <div class="row">
+                        <div class="w-60 w-sm-1 w-xs-1">
+                          <div class="w-1 w-md-1 w-xs-1">
+                            <div class="massage d-flex align-center justify-between">
+                              <div>
+                                <h2>Congratulations John! 🎉</h2>
+                                <p>You have done 72% 🤩 more sales today.
+                                  Check your new raising badge in your profile.</p>
+                                <a href="#">VIEW BADGES</a>
+                              </div>
+                              <div>
+                                <img src="images/p1.png" alt="" width="300px" height="210px" />
+                              </div>
+                            </div>
+                          </div>
+                            <!-- CHART -->
+                            <div class="revenue">
+                                <div class="row">
+                                    <div class="w-60 w-sm-1 w-xs-1">
+                                        <div class="revenue-item">
+                                            <div class="revenue-title d-flex align-center justify-between">
+                                                <h3>Total Revenue</h3>
+                                                <i class="ri-more-2-fill"></i>
+                                            </div>
+                                            <div class="revenue-chart">
+                                                <div id="chart"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-40 w-sm-1 w-xs-1">
+                                        <div class="growth-chart text-center">
+                                            <a href="#">
+                                                <select>
+                                                    <option>2023</option>
+                                                    <option>2022</option>
+                                                    <option>2021</option>
+                                                </select>
+                                            </a>
+                                            <div id="chart-1"></div>
+                                            <h4>62% Company Growth</h4>
+                                            <div class="growth-content d-flex align-center">
+                                                <img src="images/c3.jpg" alt="" width="55px"/>
+                                                <div>
+                                                    <p>2023</p>
+                                                    <h3>$32.5k</h3>
+                                                </div>
+                                            </div>
+                                            <div class="growth-content d-flex align-center">
+                                                <div class="growth-img">
+                                                    <img src="images/c2.webp" alt="" width="65px"/>
+                                                </div>
+                                                <div>
+                                                    <p>2023</p>
+                                                    <h3>$32.5k</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- order -->
+                            <div class="order">
+                                <div class="row">
+                                    <div class="w-2 w-sm-1 w-xs-1">
+                                        <div class="order-item">
+                                            <div class="order-title d-flex justify-between align-center">
+                                                <div>
+                                                    <h3>Order Statistics</h3>
+                                                    <p>42.82k Total Sales</p>
+                                                </div>
+                                                <div class="more-icon">
+                                                    <i class="ri-more-2-fill"></i>
+                                                </div>
+                                            </div>
+                                            <div class="order-count d-flex align-center justify-between">
+                                                <div>
+                                                    <h3>8,258</h3>
+                                                    <p>Total Orders</p>
+                                                </div>
+                                                <div id="chart-2"></div>
+                                            </div>
+                                            <div class="order-list d-flex align-center justify-between">
+                                                <img src="images/o5.jpg" alt="" width="52px"/>
+                                                <div class="order-type">
+                                                    <h3>Electronic</h3>
+                                                    <p>Mobile, Earbuds, TV</p>
+                                                </div>
+                                                <div>
+                                                    <h4>82.5k</h4>
+                                                </div>
+                                            </div>
+                                            <div class="order-list d-flex align-center justify-between">
+                                                <img src="images/o2.webp" alt="" width="53px"/>
+                                                <div>
+                                                    <h3>Fashion</h3>
+                                                    <p>Tshirt, Jeans, Shoes</p>
+                                                </div>
+                                                <div>
+                                                    <h4>82.5k</h4>
+                                                </div>
+                                            </div>
+                                            <div class="order-list d-flex align-center justify-between">
+                                                <img src="images/o3.webp" alt="" width="50px"/>
+                                                <div class="order-tools">
+                                                    <h3>Decor</h3>
+                                                    <p>Fine Art, Dining</p>
+                                                </div>
+                                                <div>
+                                                    <h4>82.5k</h4>
+                                                </div>
+                                            </div>
+                                            <div class="order-list d-flex align-center justify-between">
+                                                <img src="images/o6.jpg" alt="" width="48px"/>
+                                                <div class="order-teem">
+                                                    <h3>Sports</h3>
+                                                    <p>Football, Cricket Kit</p>
+                                                </div>
+                                                <div>
+                                                    <h4>82.5k</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- income -->
+                                    <div class="w-2 w-sm-1 w-xs-1">
+                                        <div class="income-item">
+                                            <div>
+                                                <ul class="d-flex align-center justify-between">
+                                                    <li><a href="javascript:void(0)">INCOME</a></li>
+                                                    <li><a href="javascript:void(0)">EXPENSES</a></li>
+                                                    <li><a href="javascript:void(0)">PROFIT</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="income-content d-flex">
+                                                <img src="images/p4.png" alt="" width="40px"/>
+                                                <div> 
+                                                    <p>Total Expenses</p>
+                                                    <h3>$316.5k<span> <i class="ri-arrow-up-s-line"></i> 27.8%</span></h3>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div id="chart-3"></div>
+                                            </div>
+                                            <div class="income-detail d-flex align-center justify-between">
+                                              <div class="income-chart">
+                                                <div id="chart-4"></div>
+                                            </div>
+                                            <div class="income-title">
+                                              <h3>Income this week</h3>
+                                              <p>$39k less than last week</p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-40 w-sm-1 w-xs-1">
+                            <div class="profit-item d-flex">
+                                <div class="w-2 w-sm-1 w-xs-1">
+                                    <div class="profit-content d-flex justify-between">
+                                        <div>
+                                            <img src="images/p2.png" alt="" width="50px"/>
+                                            <p>Profit</p>
+                                            <h2>$12,628</h2>
+                                            <h6><i class="ri-arrow-up-line"></i>72.8%</h6>
+                                        </div>
+                                        <div class="more-icon">
+                                            <i class="ri-more-2-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-2 w-sm-1 w-xs-1">
+                                    <div class="profit-content d-flex justify-between">
+                                        <div>
+                                            <img src="images/p3.png" alt="" width="50px"/>
+                                            <p>Sales</p>
+                                            <h2>$4,679</h2>
+                                            <h6><i class="ri-arrow-up-line"></i>28.42%</h6>
+                                        </div>
+                                        <div class="more-icon">
+                                            <i class="ri-more-2-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profit-item d-flex">
+                                <div class="w-2 w-sm-1 w-xs-1">
+                                    <div class="profit-content d-flex justify-between">
+                                        <div>
+                                            <img src="images/p4.png" alt="" width="50px"/>
+                                            <p>Payments</p>
+                                            <h2>$2,468</h2>
+                                            <h6 style="color:rgba(255, 0, 0, 0.719);"><i class="ri-arrow-down-line" style="color:rgba(255, 0, 0, 0.719);"></i>-14.82%</h6>
+                                        </div>
+                                        <div class="more-icon">
+                                            <i class="ri-more-2-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-2 w-sm-1 w-xs-1">
+                                    <div class="profit-content d-flex justify-between">
+                                        <div>
+                                            <img src="images/p5.png" alt="" width="50px"/>
+                                            <p>Transactions</p>
+                                            <h2>$14,857</h2>
+                                            <h6><i class="ri-arrow-up-line"></i>28.14%</h6>
+                                        </div>
+                                        <div class="more-icon">
+                                            <i class="ri-more-2-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- PROFILE REPORT -->
+                    <div class="w-1 w-sm-1 w-xs-1">
+                            <div class="report-item">
+                                <div class="report-content d-flex align-center justify-between">
+                                    <div>
+                                        <h3>Profile Report</h3>
+                                        <a href="#">YEAR 2022</a>
+                                        <h6><i class="ri-arrow-up-line"></i>68.2%</h6>
+                                        <h2>$84,686k</h2>
+                                    </div>
+                                    <div>
+                                        <img src="images/p7.webp" alt="" width="120px"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TRANSACTIONS -->
+                            <div class="w-1 w-sm-1 w-xs-1">
+                                <div class="Transactions-item">
+                                    <div class="Transactions-title d-flex">
+                                        <h3>Transactions</h3>
+                                            <div class="more-icon">
+                                                <i class="ri-more-2-fill"></i>
+                                            </div>
+                                    </div>
+                                    <div class="Transactions-content d-flex align-center justify-between">
+                                        <img src="images/p4.png" alt="" width="40px"/>
+                                        <div>
+                                            <p>Paypal</p>
+                                            <h3>Send money</h3>
+                                        </div>
+                                        <div>
+                                            <h4>+$82.6 <span class="usd">USD</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="Transactions-content d-flex align-center justify-between">
+                                        <img src="images/p8.png" alt="" width="40px"/>
+                                        <div>
+                                            <p>Paypal</p>
+                                            <h3>Send money</h3>
+                                        </div>
+                                        <div>
+                                            <h4>+$82.6 <span class="usd">USD</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="Transactions-content d-flex align-center justify-between">
+                                        <img src="images/p9.png" alt="" width="40px"/>
+                                        <div>
+                                            <p>Paypal</p>
+                                            <h3>Send money</h3>
+                                        </div>
+                                        <div>
+                                            <h4>+$82.6 <span class="usd">USD</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="Transactions-content d-flex align-center justify-between">
+                                        <img src="images/p10.png" alt="" width="40px"/>
+                                        <div>
+                                            <p>Paypal</p>
+                                            <h3>Send money</h3>
+                                        </div>
+                                        <div>
+                                            <h4>+$82.6 <span class="usd">USD</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="Transactions-content d-flex align-center justify-between">
+                                        <img src="images/p11.png" alt="" width="40px"/>
+                                        <div>
+                                            <p>Paypal</p>
+                                            <h3>Send money</h3>
+                                        </div>
+                                        <div>
+                                            <h4>+$82.6 <span class="usd">USD</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="Transactions-content d-flex align-center justify-between">
+                                        <img src="images/p12.png" alt="" width="40px"/>
+                                        <div>
+                                            <p>Paypal</p>
+                                            <h3>Send money</h3>
+                                        </div>
+                                        <div>
+                                            <h4>+$82.6 <span class="usd">USD</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer d-flex align-center justify-between">
+                  <p>© 2023 Made WithBy<i class="ri-heart-line"></i><a href="#">ThemeSelection</a></p>
+                  <p>Distributed <a href="#">ByThemeWagon</a></p>
+                  <p><a href="#">License &nbsp;&nbsp;  More Themes &nbsp;&nbsp; Documentation</a></p>
+                </div>
+            </div>
+        </main>
+      </div>
+
+
+        <script src="js/ajax.googleapis.com_ajax_libs_jquery_3.6.4_jquery.min.js" type="text/javascript"></script>
+        <script src="js/apexcharts.min.js" type="text/javascript"></script>
+        <script>
+          $(window).on("load" , function(){
+              $(".loder-overlay").fadeOut(3000);
+          });
+      </script>
+
+
+        <script>
+        $(document).ready(function () {
+    $(window).on("load", function () {
+        $(".loder-overlay").fadeOut(3000);
+    });
+
+    $(".color-list").hide();
+
+    $("#settings-icon").click(function (event) {
+        event.stopPropagation(); 
+        $(".color-list").toggle();
+    });
+
+    $(document).click(function (event) {
+        if (!$(event.target).closest(".icon-container").length) {
+            $(".color-list").hide();
+        }
+    });
+
+    $(".color-list li").click(function (event) {
+        event.stopPropagation(); 
+        var selectedColor = $(this).css("background-color");
+        $(":root").css({
+            "--theme-color": selectedColor,
+            "--bg-color": selectedColor,
+            "--text-light": selectedColor
+        });
+        $(".color-list").hide(); 
+    });
+});
+
+
+        </script>
+
+
+
+        <script>
+
+
+
+
+          $(window).on('load', function () {  
+            $('#status').fadeOut(); 
+            $('#preloader').delay(350).fadeOut('slow'); 
+            $('body').delay(350).css({ 'overflow': 'visible' });
+          })
+
+            // chart-1
+        var options = {
+          series: [
+          {
+            data: [
+              {
+                x: 'Jan',
+                y: [2800, 4500]
+              },
+              {
+                x: 'Feb',
+                y: [3200, 4100]
+              },
+              {
+                x: 'Mar',
+                y: [2950, 7800]
+              },
+              {
+                x: 'Apr',
+                y: [3000, 4600]
+              },
+              {
+                x: 'May',
+                y: [3500, 4100]
+              },
+              {
+                x: 'Jun',
+                y: [4500, 6500]
+              },
+              {
+                x: 'Jul',
+                y: [4100, 5600]
+              }
+            ]
+          }
+        ],
+          chart: {
+          height: 310,
+          type: 'rangeBar',
+          zoom: {
+            enabled:false
+          }
+        },
+        plotOptions: {
+          bar: {
+            isDumbbell: true,
+            columnWidth: 10,
+            dumbbellColors: [['rgb(3,195,236)', 'rgb(105,108,255)']]
+          }
+        },
+        legend: {
+          show: true,
+          showForSingleSeries: true,
+          position: 'top',
+          horizontalAlign: 'left',
+          customLegendItems: ['2022', '2021']
+        },
+        fill: {
+          type: 'gradient',
+          gradient: {
+            type: 'vertical',
+            gradientToColors: ['rgb(105,108,255)'],
+            inverseColors: true,
+            stops: [0, 100]
+          }
+        },
+        grid: {
+          xaxis: {
+            lines: {
+              show: true
+            }
+          },
+          yaxis: {
+            lines: {
+              show: false
+            }
+          }
+        },
+        xaxis: {
+          tickPlacement: 'on'
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+        // <!-- CHART-2 -->
+            
+      
+        var options = {
+          series: [78],
+          chart: {
+          height: 250,
+          type: 'radialBar',
+          offsetY: 10
+        },
+        plotOptions: {
+          radialBar: {
+            startAngle: -135,
+            endAngle: 135,
+            dataLabels: {
+              name: {
+                fontSize: '16px',
+                color: 'gray',
+                offsetY: 20
+              },
+              value: {
+                offsetY: -20,
+                fontSize: '25px',
+                color: undefined,
+                formatter: function (val) {
+                  return val + "%";
+                }
+              }
+            }
+          }
+        },
+        fill: {
+          type: 'gradient',
+          gradient: {
+              shade: 'dark',
+              shadeIntensity: 0.15,
+              inverseColors: false,
+              opacityFrom: 0.9,
+              opacityTo: 0.9,
+              stops: [0, 50, 65, 91]
+          },
+        },
+        stroke: {
+          dashArray: 4
+        },
+        labels: ['Growth'],
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-1"), options);
+        chart.render();
+        // chart-3
+        
+      
+        var options = {
+          series: [75],
+          chart: {
+          height: 155,
+          type: 'radialBar',
+          toolbar: {
+            show: false
+          }
+        },
+        plotOptions: {
+          radialBar: {
+            startAngle: -135,
+            endAngle: 225,
+             hollow: {
+              margin: 0,
+              size: '70%',
+              background: '#fff',
+              image: undefined,
+              imageOffsetX: 0,
+              imageOffsetY: 0,
+              position: 'front',
+              dropShadow: {
+                enabled: true,
+                top: 3,
+                left: 0,
+                blur: 4,
+                opacity: 0.24
+              }
+            },
+            track: {
+              background: '#fff',
+              strokeWidth: '67%',
+              margin: 0, // margin is in pixels
+              dropShadow: {
+                enabled: true,
+                top: -3,
+                left: 0,
+                blur: 4,
+                opacity: 0.35
+              }
+            },
+        
+            dataLabels: {
+              show: true,
+              name: {
+                offsetY: -10,
+                show: true,
+                color: '#888',
+                fontSize: '17px'
+              },
+              value: {
+                formatter: function(val) {
+                  return parseInt(val);
+                },
+                color: '#111',
+                fontSize: '36px',
+                show: true,
+              }
+            }
+          }
+        },
+        fill: {
+          type: 'gradient',
+          gradient: {
+            shade: 'dark',
+            type: 'horizontal',
+            shadeIntensity: 0.5,
+            gradientToColors: ['#ABE5A1'],
+            inverseColors: true,
+            opacityFrom: 1,
+            opacityTo: 1,
+            stops: [0, 100]
+          }
+        },
+        stroke: {
+          lineCap: 'round'
+        },
+        labels: ['Percent'],
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-2"), options);
+        chart.render();
+        // chart-4
+        
+      
+        var options = {
+          series: [{
+          name: 'series1',
+          data: [31, 40, 28, 51, 42, 109, 100]
+        },],
+          chart: {
+          height: 260,
+          type: 'area',
+          toolbar: {
+            show: false
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'smooth'
+        },
+        xaxis: {
+          type: 'datetime',
+          categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+        },
+        tooltip: {
+          x: {
+            format: 'dd/MM/yy HH:mm'
+          },
+        },
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-3"), options);
+        chart.render();
+        // chart-5
+        
+      
+        var options = {
+          series: [75],
+          chart: {
+          height: 100,
+          type: 'radialBar',
+        },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '40%',
+            }
+          },
+        },
+        labels: [''],
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-4"), options);
+        chart.render();
+        </script>
+    </body>
+</html>

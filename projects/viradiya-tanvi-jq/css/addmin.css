@@ -1,0 +1,430 @@
+:root{
+    --dark-color:black;
+    --light-color:white;
+    --theme-color:rgb(105,108,255);
+    --bg-color:rgb(245,245,249);
+    --text-dark:rgb(50,71,92);
+    --text-light:lightgray;
+    --text-color:rgba(52, 52, 52, 0.781);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#color li{
+    width:15px;
+    height:25px;
+}
+img{
+    max-width:100%;
+    display:block;
+}
+.text-center{
+    text-align: center;
+}
+.d-flex{
+    display:flex;
+}
+.align-center{
+    align-items:center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.w-2{
+    width:50%;
+}
+.w-1{
+    width:100%;
+}
+.w-60{
+    width:60%;
+}
+.w-40{
+    width:40%;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+.loader-overlay{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    position:fixed;
+    top:0;
+    left:0;
+}
+/* ASIDE */
+aside{
+    width:300px;
+    height:100vh;
+    background-color:var(--light-color);
+    position:fixed;
+    padding: 20px;
+    overflow-y: scroll;
+}
+.poster{
+    position:fixed;
+    bottom:0;
+    left:25px;
+}
+a{
+    text-decoration: none;
+    display:inline-block;
+}
+li{
+    list-style:none;
+}
+.logo a h2{
+    font-size:30px;
+    color:var(--text-dark);
+    margin-left:10px;
+}
+.logo{
+    padding:20px 0px;
+    margin-left:15px;
+}
+.menu li a{
+    color:var(--text-color);
+    font-size:18px;
+    transition: all 0.3s linear;
+}
+.menu li{
+    padding:15px 30px;
+    transition: all 0.3s linear;
+}
+.menu li a i{
+    margin-left:-16px;
+    margin-right:10px;
+}
+.menu li:hover{
+    color:var(--theme-color);
+    background-color:rgba(130, 130, 251, 0.286);
+    border-radius: 10px;
+}
+.menu p{
+    font-size:14px;
+    color:var(--text-light);
+    padding:15px;
+}
+::-webkit-scrollbar{
+    width:5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--theme-color);
+    border-radius: 20px;
+}
+::-webkit-scrollbar-track{
+    background-color:rgba(0, 0, 0, 0);
+}
+/* MAIN */
+.toggle{
+	color:var(--light-color);
+	border:1px solid var(--light-color);
+	padding:10px;
+	border-radius:5px;
+	display:none;
+}
+.toggle{
+    display:flex;
+}
+main{
+    width: cals(100%-300px);
+    height:100vh;
+    background-color:var(--bg-color);
+    margin-left:300px;
+    overflow-y: scroll;
+}
+nav , .massage , .profit-content , .report-item , .Transactions-item , .revenue , .order-item , .income-item , .footer{
+    background-color: var(--light-color);
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow:0px 0px 15px -10px var(--dark-color);
+}
+.main-section{
+    padding:25px;
+}
+nav form input{
+    border:none;
+    outline:none;
+    padding: 10px;
+    width:120px;
+}
+::placeholder{
+    font-size:20px;
+    color:var(--text-color);
+}
+nav form i{
+    font-size:22px;
+    color:var(--text-color);
+}
+.navbar-icon i{
+    color: var(--text-dark);
+    font-size: 30px;
+    margin-right: 25px;;
+}
+.profile-img img{
+    border-radius: 50%;
+
+}
+.profile-img{
+    position: relative;
+}
+.navbar-icon .profile-img::after{
+    content:'';
+    position:absolute;
+    bottom:2px;
+    right:2px;
+    border-radius: 50%;
+    border: 2px solid var(--light-color);
+    width:12px;
+    height:12px;
+    background-color:rgba(7, 207, 7, 0.845);
+}
+.massage h2{
+    color:var(--theme-color);
+    font-size: 32px;
+    font-weight: 600;
+}
+.massage p{
+    color: var(--text-color);
+    font-size: 20px;
+    width:100%;
+    margin:20px 0 15px 0;
+}
+.massage a{
+    background-color:rgba(130, 130, 251, 0.286);
+    color:var(--theme-color);
+    padding:10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.massage .img{
+    object-fit:cover;
+}
+.massage{
+    padding:10px 10px 0px 10px;
+    margin-top:25px;
+}
+.profit-content{
+    margin: 25px 0px 0px 25px;
+    padding:28px;
+}
+.profit-content p{
+    color:var(--text-color);
+    font-size: 20px;
+    margin:14px 0;
+    width: 77px;
+}
+.profit-content h2 , .report-content h2{
+    color: var(--text-color);
+    font-size: 24px;
+}
+.profit-content h6 , .report-content h6{
+    color:rgb(113,221,55);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.more-icon i , .revenue-item i{
+    color: var(--text-color);
+    font-size: 30px;
+    margin-left: 10px;
+}
+/* PROFILE REPORT */
+.report-item{
+    margin:25px 0px 0px 25px; 
+    /* padding:0px 25px 0px 25px; */
+    padding:25px;
+}
+.report-content h3 , .Transactions-title h3{
+    color:var(--text-color);
+    font-weight: 500;
+    font-size: 22px;
+    width:133px;
+}
+.report-content a{
+    color:orange;
+    background-color: rgba(255, 204, 0, 0.272);
+    padding:8px;
+    font-size: 14px;
+    border-radius: 15px;
+    margin:5px 0px 10px 0px; 
+}
+/* Transactions-item */
+.Transactions-item{
+    margin:25px 0px 0px 25px;
+}
+.Transactions-content , .order-list{
+    margin:20px 0px;
+}
+.Transactions-content p , .growth-content p , .order-list p , .income-detail p{
+    color:rgba(86, 83, 83, 0.288);
+    font-size: 18px;
+    margin-bottom:5px;
+}
+.Transactions-content img{
+    margin-right:-50px;
+}
+.Transactions-content h3 , .growth-content h3 , .order-list h3 , .income-detail h3{
+    color:var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+.Transactions-content h4 , .order-list h4{
+    color:var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+.usd{
+    color:rgba(86, 83, 83, 0.288);
+    font-size:16px;
+}
+.Transactions-title .more-icon i{
+    margin-left: 160px;
+}
+/* CHART */
+.revenue-title h3 , .order-title h3 , .order-count h3{
+    font-size: 22px;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+.revenue-chart , .revenue , .order-item{
+    margin-top: 25px;
+}
+.revenue-item{
+    border-right:1px solid var(--text-light);
+    padding-right: 20px;
+}
+select{
+    padding:7px 13px    ;
+    background-color:rgba(130, 130, 251, 0.286);
+    color:var(--theme-color);
+    border: none;
+    border-radius: 5px;
+}
+/* chart-2 */
+.growth-chart h4{
+    color:var(--text-color);
+    margin:10px 0px 20px 0px;
+}
+.growth-content img{
+    margin-left:40px;
+    margin-right: 5px;
+}
+.growth-img img{
+    margin-left:35px;
+}
+/* order */
+.order-title p , .order-count p{
+    color:var(--text-color);
+    margin-top:10px;    
+}
+.order-count p{
+    margin-top:5px;
+    width:165%;
+}
+.order img{
+    margin-right:-15PX;
+}
+.order-count h3{
+    font-size:30px;
+}
+.order-count{
+    margin-right:-50px;
+    margin-bottom:-25px;
+}
+.order-list img{
+    margin-left:-20px;
+}
+.order-tools{
+    margin-left:-20px;
+}
+.order-teem , .order-type{
+    margin-left:12px;
+}
+/* income */
+.income-item ul li a{
+    color: var(--text-color);
+    padding: 5px 3px;
+}
+.income-item ul li a:focus{
+    color: var(--light-color);
+    background-color: var(--theme-color);
+    border-radius: 5px;
+}
+.income-item{
+    margin:25px 0px 0px 25px;
+}
+.income-content p{
+    color:var(--text-color);
+    font-size:18px;
+}
+.income-content h3{
+    color:var(--text-dark);
+    font-size: 20px;
+}
+.income-content h3 span{
+    color:rgb(113,221,55);
+    font-size: 16px;
+    font-weight: 500;
+}
+.income-content img{
+    margin-right: 20px;
+}
+.income-content{
+    margin:20px 0px;
+}
+.income-detail h3{
+    width:192%;
+}
+.income-detail p{
+    width: 235%;
+}
+.income-chart{
+    margin-left: -135px;
+}
+.income-title{
+    margin-left: -110px;
+}
+/* footer */
+.footer p{
+    font-size: 18px;
+}
+.footer p a{
+    color:var(--theme-color);
+}
+.footer{
+    margin-top: 25px;
+}
+.footer p i{
+    color:red;
+}
+  /* Preloader */
+  
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99;
+  }
+  
+  #status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+  }
