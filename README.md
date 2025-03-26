@@ -29,6 +29,6 @@ Download or Clone this repository:
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/your-portfolio.git
+git clone https://github.com/viradiyatanvi/portfoliyo.git
 Open index.html in your browser.
 Enjoy the Portfolio Experience!
